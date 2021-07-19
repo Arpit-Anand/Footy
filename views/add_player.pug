@@ -1,0 +1,28 @@
+extends layout
+
+block content
+  form(method='POST' action='/players/add')
+    #form-group
+      label Name:
+      input.form-control(name = 'name', type = 'text')
+    #form-group
+      label Jersey No: 
+      input.form-control(name = 'jersey', type = 'number')
+    #form-group
+      label Age:
+      input.form-control(name = 'age', type = 'number')
+    #form-group
+      label Country:
+      input.form-control(name = 'country', type = 'text')
+    #form-group
+      label Position:
+      input.form-control(name = 'position', type = 'text')
+    #form-group
+      label Goals Scored:
+      input.form-control(name = 'goalScored', type = 'number')
+    #form-group
+      label Clean Sheet:
+      input.form-control(name = 'cleansheet', type = 'text')
+    br  
+    input.btn.btn-primary(type='submit', value = 'Submit')
+      

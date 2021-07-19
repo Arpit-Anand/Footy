@@ -1,0 +1,27 @@
+extends layout
+
+block content
+  form(method='POST' action='/players/editDetail/'+player._id)
+    #form-group
+      label Name:
+      input.form-control(name = 'name', type = 'text', value=player.name)
+    #form-group
+      label Jersey No: 
+      input.form-control(name = 'jersey', type = 'number', value = player.jersey)
+    #form-group
+      label Age:
+      input.form-control(name = 'age', type = 'number', value = player.age)
+    #form-group
+      label Country:
+      input.form-control(name = 'country', type = 'text', value = player.country)
+    #form-group
+      label Position:
+      input.form-control(name = 'position', type = 'text', value = player.position)
+    #form-group
+      label Goals Scored:
+      input.form-control(name = 'goalScored', type = 'number', value = player.goalScored)
+    #form-group
+      label Clean Sheet:
+      input.form-control(name = 'cleansheet', type = 'text', value = player.cleansheet)
+    br  
+    input.btn.btn-primary(type='submit', value = 'Submit')
